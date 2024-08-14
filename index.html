@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>성공적인 네이버플레이스 운영 비법 무료 전자책</title>
+    <link rel="stylesheet" href="https://resource.stibee.com/subscribe/stb_subscribe_form_style.css">
     <style>
+        /* 기존 스타일 유지 */
         body, html {
             margin: 0;
             padding: 0;
@@ -110,6 +112,40 @@
             max-width: 120px;
             height: auto;
         }
+        /* 스티비 폼 스타일 오버라이드 */
+        #stb_subscribe {
+            max-width: 100%;
+        }
+        .stb_form_title {
+            display: none;
+        }
+        .stb_form_set_input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .stb_form_policy {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .stb_form_submit_button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .stb_form_submit_button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -123,35 +159,29 @@
                 <p>이 전자책은 <strong>AI가 플레이스 관련 포스팅 1000개를 분석했습니다.</strong> 더 많은 고객을 유치하는 방법을 상세히 알아가세요!</p>
             </div>
 
-            <form id="subscribe-form">
-                <div class="form-group">
-                    <label for="email">이메일 주소*</label>
-                    <input type="email" id="email" name="email" required placeholder="이메일을 입력하고 무료 전자책을 받으세요.">
-                </div>
-                <div class="checkbox-group">
-                    <input type="checkbox" id="policy-agreement" required>
-                    <label for="policy-agreement">
-                        (필수) <a href="#" class="policy-link">개인정보 수집 및 이용</a>에 동의합니다.
-                    </label>
-                </div>
-                <button type="submit" class="submit-button">무료 전자책 받기</button>
-            </form>
+            <div id="stb_subscribe">
+                <form action="https://stibee.com/api/v1.0/lists/4x4-aUsvti0Ijee9piuZgBcdJbtY6A==/public/subscribers" method="POST" target="_blank" accept-charset="utf-8" class="stb_form" name="stb_subscribe_form" id="stb_subscribe_form" data-lang="" novalidate>
+                    <div class="form-group">
+                        <label for="stb_email">이메일 주소*</label>
+                        <input type="text" class="stb_form_set_input" id="stb_email" name="email" required="required" placeholder="이메일을 입력하고 무료 전자책을 받으세요.">
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="stb_policy" value="stb_policy_true" required>
+                        <label for="stb_policy">
+                            (필수) <a href="#" class="policy-link" id="stb_form_modal_open" data-modal="stb_form_policy_modal">개인정보 수집 및 이용</a>에 동의합니다.
+                        </label>
+                    </div>
+                    <button type="submit" class="submit-button stb_form_submit_button">무료 전자책 받기</button>
+                </form>
+            </div>
             
             <p><small>이메일을 제공함으로써 향후 플레이스 레터의 뉴스레터 및 마케팅 정보를 수신하는 것에 동의하게 됩니다.</small></p>
-            
-          
         </div>
         <div class="image-container">
             <img src="./images/pl_mockup.png" alt="네이버플레이스 운영 비법 전자책" class="ebook-image">
         </div>
     </div>
 
-    <script>
-        document.getElementById('subscribe-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            // 여기에 폼 제출 로직을 추가하세요
-            alert('구독 신청이 완료되었습니다. 곧 전자책 링크를 보내드리겠습니다.');
-        });
-    </script>
+    <script type="text/javascript" src="https://resource.stibee.com/subscribe/stb_subscribe_form.js"></script>
 </body>
 </html>
