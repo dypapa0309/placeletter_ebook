@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성공적인 네이버플레이스 운영 비법 무료 전자책</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .content {
+            flex: 1;
+            min-width: 300px;
+            padding-right: 40px;
+        }
+        .image-container {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        .ebook-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 32px;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+        h2 {
+            color: #34495e;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+        .ebook-intro {
+            background-color: #f1f8ff;
+            border-left: 4px solid #007bff;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .policy-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .submit-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+        .trust-element {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .trust-element img {
+            max-width: 120px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>성공적인 네이버플레이스 운영 비법!</h1>
+            <h2>지금 전자책을 무료로 다운로드하세요.</h2>
+            
+            <div class="ebook-intro">
+                <p>네이버플레이스 최적화를 통해 매출을 극대화할 수 있는 실전 가이드, 지금 바로 받아보세요!</p>
+                <p>이 전자책은 AI가 플레이스 관련 포스팅 1000개를 분석했습니다. 더 많은 고객을 유치하는 방법을 상세히 알아가세요!</p>
+            </div>
+
+            <form id="subscribe-form">
+                <div class="form-group">
+                    <label for="email">이메일 주소*</label>
+                    <input type="email" id="email" name="email" required placeholder="이메일을 입력하고 무료 전자책을 받으세요.">
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="policy-agreement" required>
+                    <label for="policy-agreement">
+                        (필수) <a href="#" class="policy-link">개인정보 수집 및 이용</a>에 동의합니다.
+                    </label>
+                </div>
+                <button type="submit" class="submit-button">무료 전자책 받기</button>
+            </form>
+            
+            <p><small>이메일을 제공함으로써 향후 플레이스 레터의 뉴스레터 및 마케팅 정보를 수신하는 것에 동의하게 됩니다.</small></p>
+            
+          
+        </div>
+        <div class="image-container">
+            <img src="./images/pl_mockup.png" alt="네이버플레이스 운영 비법 전자책" class="ebook-image">
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('subscribe-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // 여기에 폼 제출 로직을 추가하세요
+            alert('구독 신청이 완료되었습니다. 곧 전자책 링크를 보내드리겠습니다.');
+        });
+    </script>
+</body>
+</html>
