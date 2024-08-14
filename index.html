@@ -6,7 +6,6 @@
     <title>성공적인 네이버플레이스 운영 비법 무료 전자책</title>
     <link rel="stylesheet" href="https://resource.stibee.com/subscribe/stb_subscribe_form_style.css">
     <style>
-        /* 기존 스타일 유지 */
         body, html {
             margin: 0;
             padding: 0;
@@ -183,5 +182,15 @@
     </div>
 
     <script type="text/javascript" src="https://resource.stibee.com/subscribe/stb_subscribe_form.js"></script>
+    <script>
+        document.getElementById('stb_subscribe_form').addEventListener('submit', function(e) {
+            // 스티비 폼의 기본 동작을 방해하지 않도록 e.preventDefault()를 사용하지 않습니다.
+            
+            // 폼 제출 후 사용자에게 메시지 표시
+            setTimeout(function() {
+                alert('무료 구독이 완료되었습니다. 무료 전자책을 발송해드릴게요. 감사합니다.');
+            }, 500);
+        });
+    </script>
 </body>
 </html>
